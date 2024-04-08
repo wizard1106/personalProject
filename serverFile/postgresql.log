@@ -1,0 +1,43 @@
+2024-02-29 14:45:12.099 CST [18443] LOG:  starting PostgreSQL 16.2 (Postgres.app) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-02-29 14:45:12.102 CST [18443] LOG:  listening on IPv6 address "::1", port 5432
+2024-02-29 14:45:12.103 CST [18443] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-02-29 14:45:12.104 CST [18443] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-02-29 14:45:12.114 CST [18446] LOG:  database system was shut down at 2024-02-29 14:45:11 CST
+2024-02-29 14:45:12.125 CST [18443] LOG:  database system is ready to accept connections
+2024-02-29 14:50:12.107 CST [18444] LOG:  checkpoint starting: time
+2024-02-29 14:51:51.125 CST [18444] LOG:  checkpoint complete: wrote 981 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.951 s, sync=0.063 s, total=99.019 s; sync files=317, longest=0.002 s, average=0.001 s; distance=4575 kB, estimate=4575 kB; lsn=0/197E558, redo lsn=0/197E520
+2024-02-29 15:01:10.961 CST [18443] LOG:  received fast shutdown request
+2024-02-29 15:01:10.964 CST [18443] LOG:  aborting any active transactions
+2024-02-29 15:01:10.968 CST [18443] LOG:  background worker "logical replication launcher" (PID 18449) exited with exit code 1
+2024-02-29 15:01:10.968 CST [18444] LOG:  shutting down
+2024-02-29 15:01:10.971 CST [18444] LOG:  checkpoint starting: shutdown immediate
+2024-02-29 15:01:10.979 CST [18444] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.012 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4117 kB; lsn=0/197E608, redo lsn=0/197E608
+2024-02-29 15:01:10.989 CST [18443] LOG:  database system is shut down
+2024-02-29 15:02:01.065 CST [19509] LOG:  starting PostgreSQL 16.2 (Postgres.app) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-02-29 15:02:01.068 CST [19509] LOG:  listening on IPv6 address "::1", port 5432
+2024-02-29 15:02:01.069 CST [19509] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-02-29 15:02:01.069 CST [19509] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-02-29 15:02:01.078 CST [19512] LOG:  database system was shut down at 2024-02-29 15:01:29 CST
+2024-02-29 15:02:01.089 CST [19509] LOG:  database system is ready to accept connections
+2024-02-29 15:07:01.066 CST [19510] LOG:  checkpoint starting: time
+2024-02-29 15:07:01.177 CST [19510] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.001 s, total=0.111 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/197F0D8, redo lsn=0/197F0A0
+2024-02-29 15:33:18.906 CST [19509] LOG:  received fast shutdown request
+2024-02-29 15:33:18.914 CST [19509] LOG:  aborting any active transactions
+2024-02-29 15:33:18.917 CST [19509] LOG:  background worker "logical replication launcher" (PID 19515) exited with exit code 1
+2024-02-29 15:33:18.917 CST [19510] LOG:  shutting down
+2024-02-29 15:33:18.920 CST [19510] LOG:  checkpoint starting: shutdown immediate
+2024-02-29 15:33:18.926 CST [19510] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/197F188, redo lsn=0/197F188
+2024-02-29 15:33:18.934 CST [19509] LOG:  database system is shut down
+2024-03-05 15:32:18.596 CST [13702] LOG:  starting PostgreSQL 16.2 (Postgres.app) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-03-05 15:32:18.599 CST [13702] LOG:  listening on IPv6 address "::1", port 5432
+2024-03-05 15:32:18.599 CST [13702] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-05 15:32:18.600 CST [13702] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-03-05 15:32:18.615 CST [13705] LOG:  database system was shut down at 2024-02-29 15:33:18 CST
+2024-03-05 15:32:18.635 CST [13702] LOG:  database system is ready to accept connections
+2024-03-05 15:32:52.943 CST [13702] LOG:  received fast shutdown request
+2024-03-05 15:32:52.945 CST [13702] LOG:  aborting any active transactions
+2024-03-05 15:32:52.947 CST [13702] LOG:  background worker "logical replication launcher" (PID 13708) exited with exit code 1
+2024-03-05 15:32:52.948 CST [13703] LOG:  shutting down
+2024-03-05 15:32:52.949 CST [13703] LOG:  checkpoint starting: shutdown immediate
+2024-03-05 15:32:53.269 CST [13703] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.321 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/197F238, redo lsn=0/197F238
+2024-03-05 15:32:53.272 CST [13702] LOG:  database system is shut down
