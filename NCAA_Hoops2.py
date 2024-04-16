@@ -16,7 +16,7 @@ def daterange(start_date, end_date):
     for n in range(int((end_date - start_date).days)):
         yield start_date + dt.timedelta(n)
 
-season_start = dt.date(2024, 3, 5)
+season_start = dt.date(2024, 3, 18)
 today = dt.date.today()
 game_id = []
 for single_date in daterange(season_start, today):
@@ -47,28 +47,6 @@ for row in game_id:
 game_ids = []
 for row in gameId:
     game_ids.append(list(row))
-    # '''
-# #The following is an example to pull one-game worth of data: 
-# game = game_ids[69][4]
-# url = 'https://stats.ncaa.org/contests/' +str(game)+'/box_score' 
-# df_box_score = pd.read_html(url)
-# time.sleep(1)
-# headers = {"User-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36"}
-# page = requests.get(url, headers=headers)
-# game_info = page.text
-# g = game_info.find('<a href="/game/play_by_play/')
-# if g < 0:
-#     print("not found")
-# game2 = game_info[g+28: g+35]
-
-# url2 = 'https://stats.ncaa.org/game/play_by_play/' +str(game2)
-# df_pxp = pd.read_html(url2)
-# time.sleep(1)
-# url3 =  'https://stats.ncaa.org/game/period_stats/' +str(game2)
-# df_period_stats = pd.read_html(url3)
-# time.sleep(1)
-# '''
-
 
 
 from sqlalchemy import create_engine, text
@@ -107,7 +85,6 @@ for row in game_ids:
         print("gameID:", gameId)
         try:
             url =  'https://stats.ncaa.org/contests/' + str(gameId) + '/box_score'
-            #url = 'ncaa.com/game/' + str(gameId)
             df_box_score = pd.read_html(url)
             time.sleep(3)
             headers = {"User-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.37"}
@@ -124,11 +101,6 @@ for row in game_ids:
             url3 =  'https://stats.ncaa.org/game/period_stats/' +str(game2)
             df_period_stats = pd.read_html(url3)
             time.sleep(3)
-            #since we are creating sql tables, we no longer need the lists
-            #this way seems better for memory
-            #game_results_box_score.append(df_box_score)
-            #game_results_pxp.append(df_pxp)
-            #game_results_period_stats.append(df_period_stats)
             game_list.append(gameId)
             create_tables(gameId,game2,df_box_score,df_pxp,df_period_stats)
             print('success')
